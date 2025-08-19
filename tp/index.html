@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visualización de Movilidad</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 2rem; background: #fafafa; color: #333; }
+h1, h2 { text-align: center; }
+.chart { margin: 2rem 0; text-align: center; }
+img { max-width: 90%; border: 1px solid #ddd; border-radius: 8px; }
+footer { margin-top: 3rem; text-align: center; font-size: 0.9rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>¿Cómo se cuenta mi semana en movimiento?</h1>
+
+
+<div class="chart">
+<h2>¿Qué velocidad alcanza cada transporte?</h2>
+<img src="violin_Plot_Vel.svg" alt="Violin Plot de Velocidades">
+</div>
+
+
+<div class="chart">
+<h2>¿Qué transporte recorre más distancia por día?</h2>
+<img src="bumpchart_distancia.svg" alt="Bumpchart Distancia">
+</div>
+
+
+<div class="chart">
+<h2>¿En qué transporte paso más tiempo?</h2>
+<img src="bumpchart_t_mins.svg" alt="Bumpchart Tiempo en Minutos">
+</div>
+
+
+<div class="chart">
+<h2>¿Cómo varía el uso de transporte según el día?</h2>
+<img src="matrix_plot_SD_CT.svg" alt="Matrix Plot Transporte por Día">
+</div>
+
+
+<footer>
+<p>Datos originales obtenidos de Google Maps — Proyecto individual de InfoVis</p>
+</footer>
+</body>
+</html>
