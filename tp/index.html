@@ -1,18 +1,46 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Visualización de Movilidad</title>
 <style>
-body { font-family: Arial, sans-serif; margin: 2rem; background: #fafafa; color: #333; }
+body { font-family: Arial, sans-serif; margin: 2rem; background: #fafafa; color: #333; line-height: 1.5; }
 h1, h2 { text-align: center; }
 .chart { margin: 2rem 0; text-align: center; }
 img { max-width: 90%; border: 1px solid #ddd; border-radius: 8px; }
+.contexto { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem; }
 footer { margin-top: 3rem; text-align: center; font-size: 0.9rem; color: #666; }
+a { color: #0077cc; text-decoration: none; }
+a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
+
+
+<div class="contexto">
+<h1>✨ Trabajo Práctico: Visualización de Datos Personales</h1>
+<h2>📌 Objetivo</h2>
+<p>Realizar una exploración visual de datos personales utilizando todas las herramientas vistas en clase: RAWGraphs, Flourish, DataWrapper y Tableau. El proyecto debe transmitir una historia o análisis basado en datos propios, con visualizaciones estáticas y/o interactivas integradas en una página web.</p>
+
+
+<h2>📅 Fechas importantes</h2>
+<ul>
+<li>Entrega de prototipo: <strong>19 de agosto</strong></li>
+<li>Entrega final + presentación oral: <strong>2 de septiembre</strong> (Presentación breve de 5 minutos por estudiante)</li>
+</ul>
+
+
+<h2>🧠 Temática</h2>
+<p>Elegí un conjunto de datos personales que puedas registrar, recolectar o exportar. Algunas ideas posibles:</p>
+<ul>
+<li>Registro diario de actividades (salidas, ejercicio, hábitos)</li>
+<li>Biblioteca personal (libros leídos, películas vistas, música escuchada)</li>
+<li>Datos de apps personales (Strava, Spotify, Netflix, Google Takeout, etc.)</li>
+<li>Registros autogenerados (cuánto tiempo dedicás a tareas, comidas, etc.)</li>
+</ul>
+</div>
+
+
 <h1>¿Cómo se cuenta mi semana en movimiento?</h1>
 
 
@@ -24,7 +52,7 @@ footer { margin-top: 3rem; text-align: center; font-size: 0.9rem; color: #666; }
 
 <div class="chart">
 <h2>¿Qué transporte recorre más distancia por día?</h2>
-<img src="bumpchart_distancia.svg" alt="Bumpchart Distancia">
+<img src="bumpchart_distancia (1).svg" alt="Bumpchart Distancia">
 </div>
 
 
@@ -38,6 +66,14 @@ footer { margin-top: 3rem; text-align: center; font-size: 0.9rem; color: #666; }
 <h2>¿Cómo varía el uso de transporte según el día?</h2>
 <img src="matrix_plot_SD_CT.svg" alt="Matrix Plot Transporte por Día">
 </div>
+
+
+<footer>
+<p>Datos originales obtenidos de Google Maps — Proyecto individual de InfoVis</p>
+<p>📂 Fuente de datos: <a href="dataset_recorrido.csv" download>dataset_recorrido.csv</a></p>
+</footer>
+</body>
+</html>
 
 
 <footer>
