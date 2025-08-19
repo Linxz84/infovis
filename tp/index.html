@@ -1,43 +1,32 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Visualización de Movilidad</title>
 <style>
-body { font-family: Arial, sans-serif; margin: 2rem; background: #fafafa; color: #333; line-height: 1.5; }
+body { font-family: Arial, sans-serif; margin: 2rem; background: #fafafa; color: #333; }
 h1, h2 { text-align: center; }
 .chart { margin: 2rem 0; text-align: center; }
 img { max-width: 90%; border: 1px solid #ddd; border-radius: 8px; }
-.contexto { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem; }
 footer { margin-top: 3rem; text-align: center; font-size: 0.9rem; color: #666; }
-a { color: #0077cc; text-decoration: none; }
-a:hover { text-decoration: underline; }
+.context { background: #fff8dc; border: 1px solid #eee; padding: 1rem 2rem; border-radius: 8px; margin-bottom: 2rem; }
 </style>
 </head>
 <body>
-
-
-<div class="contexto">
-<h1>✨ Trabajo Práctico: Visualización de Datos Personales</h1>
-<h2>📌 Objetivo</h2>
-<p>Realizar una exploración visual de datos personales utilizando todas las herramientas vistas en clase: RAWGraphs, Flourish, DataWrapper y Tableau. El proyecto debe transmitir una historia o análisis basado en datos propios, con visualizaciones estáticas y/o interactivas integradas en una página web.</p>
-
-
-<h2>📅 Fechas importantes</h2>
-<ul>
-<li>Entrega de prototipo: <strong>19 de agosto</strong></li>
-<li>Entrega final + presentación oral: <strong>2 de septiembre</strong> (Presentación breve de 5 minutos por estudiante)</li>
-</ul>
-
-
-<h2>🧠 Temática</h2>
-<p>Elegí un conjunto de datos personales que puedas registrar, recolectar o exportar. Algunas ideas posibles:</p>
-<ul>
-<li>Registro diario de actividades (salidas, ejercicio, hábitos)</li>
-<li>Biblioteca personal (libros leídos, películas vistas, música escuchada)</li>
-<li>Datos de apps personales (Strava, Spotify, Netflix, Google Takeout, etc.)</li>
-<li>Registros autogenerados (cuánto tiempo dedicás a tareas, comidas, etc.)</li>
-</ul>
+<div class="context">
+<h2>✨ Trabajo Práctico: Visualización de Datos Personales</h2>
+<p><strong>📌 Objetivo</strong><br>
+Realizar una exploración visual de datos personales utilizando todas las herramientas vistas en clase: RAWGraphs, Flourish, DataWrapper y Tableau. El proyecto debe transmitir una historia o análisis basado en datos propios, con visualizaciones estáticas y/o interactivas integradas en una página web.</p>
+<p><strong>📅 Fechas importantes</strong><br>
+Entrega de prototipo: 19 de agosto<br>
+Entrega final + presentación oral: 2 de septiembre (Presentación breve de 5 minutos por estudiante)</p>
+<p><strong>🧠 Temática</strong><br>
+Elegí un conjunto de datos personales que puedas registrar, recolectar o exportar. Algunas ideas posibles:<br>
+Registro diario de actividades (salidas, ejercicio, hábitos)<br>
+Biblioteca personal (libros leídos, películas vistas, música escuchada)<br>
+Datos de apps personales (Strava, Spotify, Netflix, Google Takeout, etc.)<br>
+Registros autogenerados (cuánto tiempo dedicás a tareas, comidas, etc.)</p>
 </div>
 
 
@@ -46,38 +35,42 @@ a:hover { text-decoration: underline; }
 
 <div class="chart">
 <h2>¿Qué velocidad alcanza cada transporte?</h2>
-<img src="violin_Plot_Vel.svg" alt="Violin Plot de Velocidades">
+<img src="violin_Plot_Vel.svg" alt="Distribución de velocidades por transporte">
 </div>
 
 
 <div class="chart">
 <h2>¿Qué transporte recorre más distancia por día?</h2>
-<img src="bumpchart_distancia (1).svg" alt="Bumpchart Distancia">
+<img src="bumpchart_distancia.svg" alt="Comparación de distancias recorridas por transporte">
 </div>
 
 
 <div class="chart">
 <h2>¿En qué transporte paso más tiempo?</h2>
-<img src="bumpchart_t_mins.svg" alt="Bumpchart Tiempo en Minutos">
+<img src="bumpchart_t_mins.svg" alt="Comparación de tiempos en minutos por transporte">
 </div>
 
 
 <div class="chart">
 <h2>¿Cómo varía el uso de transporte según el día?</h2>
-<img src="matrix_plot_SD_CT.svg" alt="Matrix Plot Transporte por Día">
+<img src="matrix_plot_SD_CT.svg" alt="Matriz de uso de transporte por día de la semana">
+</div>
+
+
+<div class="chart">
+<h2>¿Qué patrones emergen al ver todos los datos integrados?</h2>
+<div class="flourish-embed flourish-chart" data-src="visualisation/24748419">
+<script src="https://public.flourish.studio/resources/embed.js"></script>
+<noscript>
+<img src="https://public.flourish.studio/visualisation/24748419/thumbnail" width="100%" alt="Visualización interactiva integrada en Flourish" />
+</noscript>
+</div>
 </div>
 
 
 <footer>
 <p>Datos originales obtenidos de Google Maps — Proyecto individual de InfoVis</p>
-<p>📂 Fuente de datos: <a href="dataset_recorrido.csv" download>dataset_recorrido.csv</a></p>
-</footer>
-</body>
-</html>
-
-
-<footer>
-<p>Datos originales obtenidos de Google Maps — Proyecto individual de InfoVis</p>
+<p>📊 <a href="dataset_recorrido.csv" target="_blank">Descargar dataset_recorrido.csv</a></p>
 </footer>
 </body>
 </html>
