@@ -8,7 +8,13 @@
 body { font-family: Arial, sans-serif; margin: 2rem; background: #fafafa; color: #333; }
 h1, h2 { text-align: center; }
 .chart { margin: 2rem 0; text-align: center; }
-img { max-width: 90%; border: 1px solid #ddd; border-radius: 8px; }
+/* Estilo para las imágenes SVG */
+.chart img {
+  width: 700px;
+  height: 500px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
 footer { margin-top: 3rem; text-align: center; font-size: 0.9rem; color: #666; }
 .context { background: #fff8dc; border: 1px solid #eee; padding: 1rem 2rem; border-radius: 8px; margin-bottom: 2rem; }
 </style>
@@ -32,7 +38,6 @@ Registros autogenerados (cuánto tiempo dedicás a tareas, comidas, etc.)</p>
 
 <h1>Distancias Recorridas / Actividad</h1>
 
-
 <div class="chart">
 <h2>¿Qué velocidad alcanza cada transporte?</h2>
 <img src="violin_Plot_Vel.svg" alt="Distribución de velocidades por transporte">
@@ -47,7 +52,15 @@ Registros autogenerados (cuánto tiempo dedicás a tareas, comidas, etc.)</p>
 
 <div class="chart">
 <h2>¿En qué transporte paso más tiempo?</h2>
-<div class='tableauPlaceholder' id='viz1755815382934' style='position: relative'><noscript><a href='#'><img alt='Tiempo total en min. por transporte y día ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tm&#47;Tmintransporteydia&#47;Hoja2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Tmintransporteydia&#47;Hoja2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tm&#47;Tmintransporteydia&#47;Hoja2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es-ES' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1755815382934');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+<div class='tableauPlaceholder' id='viz1755815382934' style='position: relative'><noscript><a href='#'><img alt='Tiempo total en min. por transporte y día ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tm&#47;Tmintransporteydia&#47;Hoja2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Tmintransporteydia&#47;Hoja2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tm&#47;Tmintransporteydia&#47;Hoja2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es-ES' /><param name='filter' value='publish=yes' /></object></div>          <script type='text/javascript'>
+  var divElement = document.getElementById('viz1755815382934');
+  var vizElement = divElement.getElementsByTagName('object')[0];
+  vizElement.style.width='700px';
+  vizElement.style.height='500px';
+  var scriptElement = document.createElement('script');
+  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
 </div>
 
 
@@ -59,10 +72,10 @@ Registros autogenerados (cuánto tiempo dedicás a tareas, comidas, etc.)</p>
 
 <div class="chart">
 <h2>¿Qué patrones emergen al ver todos los datos integrados?</h2>
-<div class="flourish-embed flourish-chart" data-src="visualisation/24748419">
+<div class="flourish-embed flourish-chart" data-src="visualisation/24748419" style="width: 700px; height: 500px;">
 <script src="https://public.flourish.studio/resources/embed.js"></script>
 <noscript>
-<img src="https://public.flourish.studio/visualisation/24748419/thumbnail" width="100%" alt="Visualización interactiva integrada en Flourish" />
+<img src="https://public.flourish.studio/visualisation/24748419/thumbnail" width="700" height="500" alt="Visualización interactiva integrada en Flourish" />
 </noscript>
 </div>
 </div>
