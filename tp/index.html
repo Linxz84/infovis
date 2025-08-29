@@ -9,9 +9,13 @@ body {
   font-family: Arial, sans-serif;
   background: #fafafa;
   color: #333;
-  /* Centra el contenido principal */
-  margin: 0 auto;
-  max-width: 900px;
+
+  /* Flexbox para centrar horizontalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0;
   padding: 2rem;
 }
 
@@ -30,6 +34,8 @@ h1, h2 {
   height: 500px;
   border: 1px solid #ddd;
   border-radius: 8px;
+  display: block;
+  margin: 0 auto;
 }
 
 footer {
@@ -45,74 +51,97 @@ footer {
   padding: 1rem 2rem;
   border-radius: 8px;
   margin-bottom: 2rem;
+  max-width: 900px;
 }
 </style>
 </head>
 <body>
 <div class="context">
-<h2>✨ Trabajo Práctico: Visualización de Datos Personales</h2>
-<p><strong>📌 Objetivo</strong><br>
-Realizar una exploración visual de datos personales utilizando todas las herramientas vistas en clase: RAWGraphs, Flourish, DataWrapper y Tableau. El proyecto debe transmitir una historia o análisis basado en datos propios, con visualizaciones estáticas y/o interactivas integradas en una página web.</p>
-<p><strong>📅 Fechas importantes</strong><br>
-Entrega de prototipo: 19 de agosto<br>
-Entrega final + presentación oral: 2 de septiembre (Presentación breve de 5 minutos por estudiante)</p>
-<p><strong>🧠 Temática</strong><br>
-Elegí un conjunto de datos personales que puedas registrar, recolectar o exportar. Algunas ideas posibles:<br>
-Registro diario de actividades (salidas, ejercicio, hábitos)<br>
-Biblioteca personal (libros leídos, películas vistas, música escuchada)<br>
-Datos de apps personales (Strava, Spotify, Netflix, Google Takeout, etc.)<br>
-Registros autogenerados (cuánto tiempo dedicás a tareas, comidas, etc.)</p>
+  <h2>✨ Trabajo Práctico: Visualización de Datos Personales</h2>
+  <p><strong>📌 Objetivo</strong><br>
+  Realizar una exploración visual de datos personales utilizando todas las herramientas vistas en clase: RAWGraphs, Flourish, DataWrapper y Tableau. El proyecto debe transmitir una historia o análisis basado en datos propios, con visualizaciones estáticas y/o interactivas integradas en una página web.</p>
+  <p><strong>📅 Fechas importantes</strong><br>
+  Entrega de prototipo: 19 de agosto<br>
+  Entrega final + presentación oral: 2 de septiembre (Presentación breve de 5 minutos por estudiante)</p>
+  <p><strong>🧠 Temática</strong><br>
+  Elegí un conjunto de datos personales que puedas registrar, recolectar o exportar. Algunas ideas posibles:<br>
+  Registro diario de actividades (salidas, ejercicio, hábitos)<br>
+  Biblioteca personal (libros leídos, películas vistas, música escuchada)<br>
+  Datos de apps personales (Strava, Spotify, Netflix, Google Takeout, etc.)<br>
+  Registros autogenerados (cuánto tiempo dedicás a tareas, comidas, etc.)</p>
 </div>
-
 
 <h1>Distancias Recorridas / Actividad</h1>
 
 <div class="chart">
-<h2>¿Qué velocidad alcanza cada transporte?</h2>
-<img src="violin_Plot_Vel.svg" alt="Distribución de velocidades por transporte">
+  <h2>¿Qué velocidad alcanza cada transporte?</h2>
+  <img src="violin_Plot_Vel.svg" alt="Distribución de velocidades por transporte">
 </div>
-
 
 <div class="chart">
-<h2>¿Qué transporte recorre más distancia por día?</h2>
-<img src="bumpchart_distancia.svg" alt="Comparación de distancias recorridas por transporte">
+  <h2>¿Qué transporte recorre más distancia por día?</h2>
+  <img src="bumpchart_distancia.svg" alt="Comparación de distancias recorridas por transporte">
 </div>
-
 
 <div class="chart">
-<h2>¿En qué transporte paso más tiempo?</h2>
-<div class='tableauPlaceholder' id='viz1755815382934' style='position: relative'><noscript><a href='#'><img alt='Tiempo total en min. por transporte y día ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tm&#47;Tmintransporteydia&#47;Hoja2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Tmintransporteydia&#47;Hoja2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tm&#47;Tmintransporteydia&#47;Hoja2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es-ES' /><param name='filter' value='publish=yes' /></object></div>          <script type='text/javascript'>
-  var divElement = document.getElementById('viz1755815382934');
-  var vizElement = divElement.getElementsByTagName('object')[0];
-  vizElement.style.width='700px';
-  vizElement.style.height='500px';
-  var scriptElement = document.createElement('script');
-  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-  vizElement.parentNode.insertBefore(scriptElement, vizElement);
-</script>
+  <h2>¿En qué transporte paso más tiempo?</h2>
+  <div class='tableauPlaceholder' id='viz1755815382934' style='position: relative'>
+    <noscript>
+      <a href='#'>
+        <img alt='Tiempo total en min. por transporte y día ' src='https://public.tableau.com/static/images/Tm/Tmintransporteydia/Hoja2/1_rss.png' style='border: none' />
+      </a>
+    </noscript>
+    <object class='tableauViz'  style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+      <param name='embed_code_version' value='3' /> 
+      <param name='site_root' value='' />
+      <param name='name' value='Tmintransporteydia/Hoja2' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https://public.tableau.com/static/images/Tm/Tmintransporteydia/Hoja2/1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='es-ES' />
+      <param name='filter' value='publish=yes' />
+    </object>
+  </div>
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1755815382934');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width='700px';
+    vizElement.style.height='500px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
 </div>
-
 
 <div class="chart">
-<h2>¿Cómo varía el uso de transporte según el día?</h2>
-<div style="min-height:487px" id="datawrapper-vis-6M81a"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/6M81a/embed.js" charset="utf-8" data-target="#datawrapper-vis-6M81a"></script><noscript><img src="https://datawrapper.dwcdn.net/6M81a/full.png" alt="Suma de viajes hechos por día en el mes (Stacked column chart)" /></noscript></div>
+  <h2>¿Cómo varía el uso de transporte según el día?</h2>
+  <div style="min-height:487px" id="datawrapper-vis-6M81a">
+    <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/6M81a/embed.js" charset="utf-8" data-target="#datawrapper-vis-6M81a"></script>
+    <noscript>
+      <img src="https://datawrapper.dwcdn.net/6M81a/full.png" alt="Suma de viajes hechos por día en el mes (Stacked column chart)" />
+    </noscript>
+  </div>
 </div>
-
 
 <div class="chart">
-<h2>¿Qué patrones emergen al ver todos los datos integrados?</h2>
-<div class="flourish-embed flourish-chart" data-src="visualisation/24748419" style="width: 700px; height: 500px;">
-<script src="https://public.flourish.studio/resources/embed.js"></script>
-<noscript>
-<img src="https://public.flourish.studio/visualisation/24748419/thumbnail" width="700" height="500" alt="Visualización interactiva integrada en Flourish" />
-</noscript>
+  <h2>¿Qué patrones emergen al ver todos los datos integrados?</h2>
+  <div class="flourish-embed flourish-chart" data-src="visualisation/24748419" style="width: 700px; height: 500px;">
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+    <noscript>
+      <img src="https://public.flourish.studio/visualisation/24748419/thumbnail" width="700" height="500" alt="Visualización interactiva integrada en Flourish" />
+    </noscript>
+  </div>
 </div>
-</div>
-
 
 <footer>
-<p>Datos originales obtenidos de Google Maps — Proyecto individual de InfoVis</p>
-<p>📊 <a href="dataset_recorrido.csv" target="_blank">Descargar dataset_recorrido.csv</a></p>
+  <p>Datos originales obtenidos de Google Maps — Proyecto individual de InfoVis</p>
+  <p>📊 <a href="dataset_recorrido.csv" target="_blank">Descargar dataset_recorrido.csv</a></p>
 </footer>
 </body>
 </html>
