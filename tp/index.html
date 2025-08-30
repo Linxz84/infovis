@@ -10,13 +10,12 @@ body {
   background: #fafafa;
   color: #333;
 
-  /* Flexbox para centrar horizontalmente */
   display: flex;
   flex-direction: column;
   align-items: center;
 
   margin: 0;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 h1, h2 {
@@ -26,12 +25,18 @@ h1, h2 {
 .chart {
   margin: 2rem 0;
   text-align: center;
+  width: 100%;
+  max-width: 900px;
 }
 
-/* Estilo para las imágenes SVG */
-.chart img {
-  width: 700px;
-  height: 500px;
+/* Imágenes y embeds adaptativos */
+.chart img,
+.chart object,
+.chart iframe,
+.flourish-embed {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
   border: 1px solid #ddd;
   border-radius: 8px;
   display: block;
@@ -51,7 +56,35 @@ footer {
   padding: 1rem 2rem;
   border-radius: 8px;
   margin-bottom: 2rem;
+  width: 100%;
   max-width: 900px;
+}
+
+/* --- Media Queries para distintos dispositivos --- */
+
+/* Tablets (pantallas medianas) */
+@media (max-width: 900px) {
+  .chart img,
+  .chart object,
+  .flourish-embed {
+    max-width: 100%;
+  }
+}
+
+/* Celulares (pantallas pequeñas) */
+@media (max-width: 600px) {
+  body {
+    padding: 0.5rem;
+  }
+  .context {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
 }
 </style>
 </head>
@@ -91,7 +124,7 @@ footer {
         <img alt='Tiempo total en min. por transporte y día ' src='https://public.tableau.com/static/images/Tm/Tmintransporteydia/Hoja2/1_rss.png' style='border: none' />
       </a>
     </noscript>
-    <object class='tableauViz'  style='display:none;'>
+    <object class='tableauViz' style='display:none;'>
       <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
       <param name='embed_code_version' value='3' /> 
       <param name='site_root' value='' />
@@ -111,7 +144,7 @@ footer {
   <script type='text/javascript'>
     var divElement = document.getElementById('viz1755815382934');
     var vizElement = divElement.getElementsByTagName('object')[0];
-    vizElement.style.width='700px';
+    vizElement.style.width='100%';
     vizElement.style.height='500px';
     var scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
@@ -121,7 +154,7 @@ footer {
 
 <div class="chart">
   <h2>¿Cómo varía el uso de transporte según el día?</h2>
-  <div style="min-height:487px" id="datawrapper-vis-6M81a">
+  <div style="min-height:300px" id="datawrapper-vis-6M81a">
     <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/6M81a/embed.js" charset="utf-8" data-target="#datawrapper-vis-6M81a"></script>
     <noscript>
       <img src="https://datawrapper.dwcdn.net/6M81a/full.png" alt="Suma de viajes hechos por día en el mes (Stacked column chart)" />
@@ -131,7 +164,7 @@ footer {
 
 <div class="chart">
   <h2>¿Qué patrones emergen al ver todos los datos integrados?</h2>
-  <div class="flourish-embed flourish-chart" data-src="visualisation/24748419" style="width: 700px; height: 500px;">
+  <div class="flourish-embed flourish-chart" data-src="visualisation/24748419" style="width: 100%; max-width: 700px; height: 500px;">
     <script src="https://public.flourish.studio/resources/embed.js"></script>
     <noscript>
       <img src="https://public.flourish.studio/visualisation/24748419/thumbnail" width="700" height="500" alt="Visualización interactiva integrada en Flourish" />
